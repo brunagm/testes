@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../Testes/src/css/estilo.css" type="text/css">
+</head>
+
+<body>
+    <script src="src/js/script.js"></script>
+    <!--Topo-->
+    <div id="header">
+        <p>Formulário<br>
+           para compra de</p>
+        <h4>Pacote de Stickers</h4>   
+    </div>
+    
+    <div id="container">
+        <!--Seleção-->
+        <div class="campos">
+            <h4>Quais stickers?</h4>
+            <form id="check">
+                <div class="checkbox">
+                    <input  type="checkbox" id="checkbox-1" name="react">
+                    <label  for="checkbox-1"> React </label>
+                </div>
+                <div class="checkbox" >
+                        <input  type="checkbox" id="checkbox-2" name="vue" >
+                        <label  for="checkbox-2"> Vue </label>
+                </div>
+                <div class="checkbox" >
+                        <input  type="checkbox" id="checkbox-3" name="angular" >
+                        <label  for="checkbox-3"> Angular </label>
+                </div>
+            </form>
+        </div>
+        <!--Quantidade-->
+        <div class="campos">
+            <h4>Quantos stickers de cada?</h4>
+            <form action="" method="post" name="">
+                <button type="button" class="botao" onClick="Diminuir();"> - </button>
+                <input name="quantidade" type="text" id="quantidade" type="button" placeholder="0">
+                <button type="button" class="botao" onClick="Aumentar();"> + </button>
+            </form>
+        
+        </div>
+        <!--Observações-->
+        <div class="campos">
+            <h4>Observações:</h4>
+            <form id="obs">
+                <textarea rows="5" cols="48" placeholder="Alguma dúvida? Recado?"></textarea>
+            </form>
+        </div>
+    </div> 
+        <!--Rodapé-->           
+        <div id="enviar">
+                <p id="demo"></p>
+            <button class="botao" type="submit"  onclick="enviar()" >Enviar</button>
+        </div>
+    
+</body>

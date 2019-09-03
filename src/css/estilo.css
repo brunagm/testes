@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Inter var",sans-serif;
+    background: #639;
+    width: 400px;
+    margin: 5px auto;
+}
+
+/**Configuração topo**/
+#header{
+    background: url('../assets/header.png') no-repeat top #fff ;
+    background-size: 400px;
+    width: 400px;
+    height: 150px;
+    border-radius: 5px 5px 0px 0px;
+    }
+
+#header p{
+    padding: 25px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+#header h4{
+    color: white;
+    padding: 2px;
+    line-height: 1.5;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/**configuração geral do container**/
+#container{
+    height: 340px;
+    margin: 0px;
+    background: #fff;
+    padding: 10px;
+}
+
+.campos{
+    padding: 20px 10px 10px 10px;
+}
+
+h4{
+    margin-bottom: 6px;
+}
+
+.botao{
+    background-color: #2f3676;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 3px 10px;
+    border: none;
+    color: white;
+}
+
+.botao:hover{
+    background-color: #212653;
+}
+
+/**configuração da caixa de escolha**/ 
+input[type='checkbox'] {
+     position: absolute;
+     z-index: -1;
+     opacity: 0;
+  }
+
+input[type='checkbox'] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    font-size: 14px;   
+    }
+
+input[type='checkbox'] + label::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: #2f3676;
+    border-radius: 3px;
+    }
+   
+.checkbox input[type="checkbox"]:focus + label::before {
+        outline: rgb(59, 153, 252) auto 5px;
+    }    
+
+ /**configuração do check**/ 
+
+ input[type='checkbox']:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 5px;
+    height: 10px;
+    border-right: solid 3px white;
+    border-bottom: solid 3px white;
+    transform: rotate(45deg);
+    
+  }
+
+/**configuração escolha da quantidade**/
+input{
+    border: 1px solid #2f3676;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    background-color: #dde3e9;
+    padding: 3px 10px;
+    font-size: 14px;
+}  
+
+/**configuração da observação**/
+textarea{
+    border: 1px solid #2f3676;
+    border-radius: 3px;
+    background-color: #dde3e9;
+    }
+
+/**Configuração rodapé**/
+#enviar{
+    background: #dde3e9 ;
+    height: 60px;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+    }
+
+#enviar button{
+    float: right; 
+    margin: 1em;
+    line-height: 20px;
+
+}
+
